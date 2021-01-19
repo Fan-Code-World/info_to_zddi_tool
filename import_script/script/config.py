@@ -3,10 +3,10 @@
 
 
 IMPORT_DATA_PATH = '../import_data/'
-CMS_ADDRESS = '10.232.0.203'
+CMS_ADDRESS = '127.0.0.1'
 CMS_USER = 'admin'
-CMS_PASSWD = 'TTd29mv6r7'
+CMS_PASSWD = 'admin'
 NETWORK_OWNERS = ['local.master']
 POOL_OWNER = 'local.master'
-NAME_VALUE = 'IPphone'
+NAME_VALUE = '默认组'
 LOG_FILE = '../log/result.log'

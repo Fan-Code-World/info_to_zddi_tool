@@ -26,6 +26,7 @@ def loger(log_info):
 
 
 
+'''
 # 从文件读取网络及自定义属性列表
 network_comments = {}
 network_file_handle = file(config.IMPORT_DATA_PATH + 'FT_office.csv', 'r')
@@ -34,7 +35,6 @@ for network_line in network_reader:
     network_comments[network_line[0]] = {
         'subnet_mask': network_line[0], 'comment': network_line[1]}
 network_file_handle.close()
-'''
 # 从文件读取固定地址或保留地址的自定义属性列表
 ipaddr_comments = {}
 ipaddr_file_handle = open(config.IMPORT_DATA_PATH + 'exist_fixed_network.csv', 'r')

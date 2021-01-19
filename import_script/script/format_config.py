@@ -26,7 +26,7 @@ class HandleInfo:
                         conf_dic[subnet]['pools'].append((start_ip, end_ip))
                     else:
                         conf_dic[subnet]['pools'].append((start_ip, end_ip))
-                if 'host' in j:
+                if 'host' in j and 'option' not in j:
                     host_ip = j.split()[1]
                     host_ip_index = conf_tmp.index(j)
                     host_mac = conf_tmp[host_ip_index + 2].split()[2]
